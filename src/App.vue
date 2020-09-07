@@ -4,14 +4,6 @@
   </div>
 </template>
 
-<script>
-import store from "./vue/store";
-export default {
-  name: "App",
-  store
-};
-</script>
-
 <style>
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
