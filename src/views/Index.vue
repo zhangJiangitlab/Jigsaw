@@ -4,6 +4,7 @@
     <ul class="puzzle-ul">
       <li
         v-for="(puzzle, index) in puzzles"
+        :key="puzzle"
         class="puzzle-li"
         @click="moveFn(index)"
         :class="{ 'puzzle-empty': !puzzle }"
