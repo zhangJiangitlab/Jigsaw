@@ -86,7 +86,7 @@ export default {
         const newPuzzles = this.puzzles.slice(0, 15);
         const isPass = newPuzzles.every((e, i) => e === i + 1); //判断数组是否是1，2,3，...14,15
         if (isPass) {
-          alert(`兄弟，恭喜你闯关成功！您一共走了${this.stepNumber}步`);
+          alert(`很遗憾，闯关成功（哭），您一共走了${this.stepNumber}步`);
           this.reSort();
         }
       }
