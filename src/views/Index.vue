@@ -18,8 +18,6 @@
 </template>
 
 <script>
-// @ is an alias to /src
-
 export default {
   name: "home",
   components: {},
@@ -61,7 +59,7 @@ export default {
         rightNum = this.puzzles[index + 1],
         bottomNum = this.puzzles[index + 4],
         leftNum = this.puzzles[index - 1];
-      //和空值交换
+      //和空值交换（移动）
       if (leftNum === "" && index % 4) {
         this.$set(this.puzzles, index - 1, curNum);
         this.$set(this.puzzles, index, "");
